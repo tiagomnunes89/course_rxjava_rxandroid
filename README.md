@@ -2,7 +2,7 @@
 
 O curso RxJava RxAndroid é ideal para programadores Android experientes que desejam levar seu código para o próximo nível, para o nível reativo. Com o Rx, você aprenderá uma série de métodos e interfaces que o ajudarão a resolver muitos problemas que os programadores encontram de maneira elegante e também com uma simplicidade única que a programação reativa nos oferece.
 
-O RxJava estende o padrão de design do Observer, baseado no conceito de Observáveis ​​e Observadores, que será visto ao longo do tutorial.
+O RxJava estende o padrão de design do Observer, baseado no conceito de Observáveis ​​e Observadores, que será visto neste curso.
 
 O que é Rx?
 
