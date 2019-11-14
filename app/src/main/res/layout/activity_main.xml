@@ -14,8 +14,14 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btRX00Intro"
-            android:text="Introdução"
+        android:id="@+id/btRX00Intro"
+        android:text="Introdução"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btRX01Disposable"
+            android:text="Disposable"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
