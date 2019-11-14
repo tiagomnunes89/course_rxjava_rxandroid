@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btRX00Intro;
     private Button btRX01Disposable;
+    private Button btRX02CompositeDisposable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
     private void setUpView() {
         btRX00Intro = findViewById(R.id.btRX00Intro);
         btRX01Disposable = findViewById(R.id.btRX01Disposable);
+        btRX02CompositeDisposable = findViewById(R.id.btRX02CompositeDisposable);
         btRX00Intro.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),Rx00IntroActivity.class)));
         btRX01Disposable.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),Rx01DisposableActivity.class)));
+        btRX02CompositeDisposable.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),Rx02CompositeDisposableActivity.class)));
     }
 }
