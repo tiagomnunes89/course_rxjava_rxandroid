@@ -7,7 +7,10 @@ import android.util.Log;
 
 import io.reactivex.Observable;
 import io.reactivex.Observer;
+import io.reactivex.Scheduler;
+import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
 
 public class Rx00IntroActivity extends AppCompatActivity {
 
@@ -41,6 +44,9 @@ public class Rx00IntroActivity extends AppCompatActivity {
             }
         };
 
-        numbersObservable.subscribe(numbersObserver);
+        numbersObservable
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(numbersObserver);
     }
 }
