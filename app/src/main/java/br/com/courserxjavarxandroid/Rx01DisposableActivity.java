@@ -32,6 +32,7 @@ public class Rx01DisposableActivity extends AppCompatActivity {
 
             @Override
             public void onNext(String numero) {
+                Log.d("TAG1", "isDisposed: " + " Thread: " + disposable.isDisposed());
                 Log.d("TAG1", "onNext - Number: " + numero + " Thread: " + Thread.currentThread().getName());
             }
 
@@ -55,7 +56,9 @@ public class Rx01DisposableActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        Log.d("TAG1", "isDisposed: " + " Thread: " + disposable.isDisposed());
         disposable.dispose();
+        Log.d("TAG1", "isDisposed: " + " Thread: " + disposable.isDisposed());
         Log.d("TAG1", "onDestroy: discard the subscription" + " Thread: " + Thread.currentThread().getName());
     }
 }
